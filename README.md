@@ -52,3 +52,12 @@ Suggest you to install Jenkins with docker.
     --volume jenkins-data:/var/jenkins_home \
     --volume jenkins-docker-certs:/certs/client:ro \
     myjenkins-blueocean:2.462.3-1
+
+7. By default,the Jenkins url is http://127.0.0.1:8080/, once you enter the website,you need the password for unlocking Jenkins,paste the command in terminal and copy the the website:
+
+   ```bash
+    docker exec jenkins-blueocean cat /var/jenkins_home/secrets/initialAdminPassword
+
+8. Select "Install suggested plugins"
+9. browse the website and register a account for yourself
+10. Start to practice Jenkins!!
